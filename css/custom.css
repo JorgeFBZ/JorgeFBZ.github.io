@@ -222,7 +222,18 @@ a:hover {
   color: #8c8c8c;
 }
 
+
+.skills .skill-list {
+  margin-left: 0px;
+}
+
+.skills .skill-list li:first-child {
+  font-size: 0.9375em;
+  color: #8c8c8c;
+}
+
 .quote {
+  /* Source:https://unsplash.com/es/fotos/fotografia-aerea-de-montanas-tlbUJKfHhEw */
   background: url(https://images.unsplash.com/photo-1474140214938-f0295cf3d18e?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-position: 50% 26%;
   padding: 20px 0px;
