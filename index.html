@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/kube.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/custom.css" />
-    <link rel="shortcut icon" href="img/favicon.png" />
+    <link rel="shortcut icon" href="img/logo.png" />
     <link
       href="https://fonts.googleapis.com/css?family=Playfair+Display+SC:700"
       rel="stylesheet"
@@ -50,7 +50,7 @@
               <li><a href="#formacion">Formación</a></li>
               <li><a href="#cursos">Cursos</a></li>
               <li><a href="#skills">Habilidades</a></li>
-
+              <li><a href="#proyectos">Proyectos</a></li>
             </ul>
           </nav>
         </header>
@@ -63,16 +63,13 @@
         <p>¡Hola!, soy Jorge</p>
         <div class="units-row units-split wrap">
           <div class="unit-20">
-            <img src="img/ava.jpg" alt="Avatar" />
+            <img src="img/ava_b&w.jpg" alt="Avatar" />
           </div>
           <div class="unit-80">
             <h1>I live in<br /><span id="typed"></span></h1>
           </div>
           <p>
-            Draco is a constellation in the far northern sky. Its name is Latin
-            for dragon. Draco is circumpolar (that is, never setting) for many
-            observers in the northern hemisphere. It was one of the 48
-            constellations listed by the 2nd century astronomer Ptolemy.
+          Geólogo con experiencia en el sector minero, especializado en control de leyes y cartografía de frentes de mina, además de habilidades en Python y Machine Learning, con una fuerte orientación hacia el aprendizaje continuo y la superación de nuevos retos profesionales.
           </p>
         </div>
       </div>
@@ -174,7 +171,18 @@
       <div class="container">
         <h1>Habilidades<br />Técnicas</h1>
         <ul class="skill-list list-flat">
-          <li>Database</li>
+          <li></li>
+          <li>
+            <span class="fa fa-circle"></span>
+            <span class="fa fa-circle"></span>
+            <span class="fa fa-circle"></span>
+            <span class="fa fa-circle"></span>
+            <span class="fa fa-circle-o"></span>
+            Inglés
+          </li>
+        </ul>
+        <ul class="skill-list list-flat">
+          <li></li>
           <li>
             <span class="fa fa-circle"></span>
             <span class="fa fa-circle-o"></span>
@@ -290,8 +298,29 @@
       </div>
     </div>
 
-    
+    <!-- Proyectos -->
+    <div class="skill section second" id="proyectos">
+      <div class="container">
+        <h1>Proyectos</h1>
+        <div class ="project-card" style="cursor: pointer;" onclick="window.location= 'https://github.com/JorgeFBZ/Deep-Core';">
+          <h2><a href="#">Aplicación Deep-Core</a></h2>
+          <div class= "card-content">
+              <img src="./img/sondeos.png" alt="Sondeos">
+            <p>Aplicación web desarrollada en Django que permite almacenar y gestionar datos de sondeos geológicos, así como realizar la segmentación de imágenes utilizando YOLOv8 para identificar tres categorías: cota, testigo y alta fracturación.</p>
+          </div>
+        </div>
+     
 
+        <div class ="project-card" style="cursor: pointer;" onclick="window.location= 'https://github.com/JorgeFBZ/Terremotos-Isla-de-San-Jorge';">
+          <h2><a href="#">Aplicación terremotos Azores</a></h2>
+          <div class= "card-content">
+              <img src="./img/streamlit.png" alt="Streamlit app">
+            <p>Aplicación web desarrollada en Streamlit que permite visualizar los terremotos registrados en la isla de San Jorge (Azores).</p>
+            <a href="https://jorgefbz-terremotos-isla-de-san-jorge-terremotos-azores-zwf6rj.streamlit.app/"><span class=" fa fa-link"> </span>Enlace a la aplicación</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Quote -->
     <div class="quote">
       <div class="container text-centered">
@@ -303,6 +332,8 @@
         </h1>
       </div>
     </div>
+  </div>
+
 
     <footer>
       <div class="container">

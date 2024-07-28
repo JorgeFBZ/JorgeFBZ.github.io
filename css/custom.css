@@ -260,3 +260,30 @@ footer .social li a {
   font-size: 1.25em;
   color: #999999;
 }
+
+.project-card {
+  width: 75%;
+  margin-bottom: 1.8em;
+}
+
+.card-content {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 1.25em;
+}
+
+.card-content p {
+  text-align: justify;
+  margin-top: 1.05em;
+  margin-bottom: 1.05em;
+}
+
+.card-content a {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.card-content a span {
+  padding-right: 0.5em;
+}
