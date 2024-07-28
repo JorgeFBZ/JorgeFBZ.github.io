@@ -1,4 +1,4 @@
-#CV Jorge Fuertes
+# CV Jorge Fuertes
 
 ### Modificado de:
 A free PSD & HTML resume template.
