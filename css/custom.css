@@ -287,3 +287,29 @@ footer .social li a {
 .card-content a span {
   padding-right: 0.5em;
 }
+
+.language-navbar {
+  float: right;
+  margin-right: 2.5em;
+}
+
+.language-navbar ul {
+  list-style-type: none;
+}
+
+.language-navbar a {
+  text-decoration: none !important;
+  color: #8c8c8c !important;
+}
+
+.language-navbar a:hover {
+  text-decoration: none !important;
+  color: #333333 !important;
+}
+
+.flag-icon {
+  height: 1.1em;
+  width: 1.1em;
+  vertical-align: middle;
+  border-radius: 3px;
+}
