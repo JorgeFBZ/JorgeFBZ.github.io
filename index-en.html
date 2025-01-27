@@ -24,6 +24,10 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <style>
       .intro h1:before {
       	/* Edit this with your name or anything else */
@@ -329,22 +333,48 @@
     <div class="skill section second" id="proyectos">
       <div class="container">
         <h1>Projects</h1>
-        <div class ="project-card" style="cursor: pointer;" onclick="window.location= 'https://github.com/JorgeFBZ/Deep-Core';">
-          <h2><a href="#">Deep-Core application</a></h2>
-          <div class= "card-content">
-              <img src="./img/sondeos.png" alt="Sondeos">
-            <p>Web application developed in Django that allows storing and managing geological drilling data, as well as performing image segmentation using YOLOv8 to identify three categories: depth, non-fractured core, and high-fractured core.</p>
+        <!-- Slides -->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- Slide Deep-core -->
+            <div class="swiper-slide">
+              <div class ="project-card" style="cursor: pointer;" onclick="window.location= 'https://github.com/JorgeFBZ/Deep-Core';">
+                <h2><a href="#">Deep-Core application</a></h2>
+                <div class= "card-content">
+                    <img src="./img/sondeos.png" alt="Sondeos">
+                  <p>Web application developed in Django that allows storing and managing geological drilling data, as well as performing image segmentation using YOLOv8 to identify three categories: depth, non-fractured core, and high-fractured core.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide terremotos -->
+            <div class="swiper-slide">
+              <div class ="project-card" style="cursor: pointer;" onclick="window.location= 'https://github.com/JorgeFBZ/Terremotos-Isla-de-San-Jorge';">
+                <h2><a href="#">Azores earthquake app</a></h2>
+                <div class= "card-content">
+                    <img src="./img/streamlit.png" alt="Streamlit app">
+                  <p>Web application developed in Streamlit to visualize earthquakes recorded on São Jorge Island (Azores).</p>
+                  <a href="https://jorgefbz-terremotos-isla-de-san-jorge-terremotos-azores-zwf6rj.streamlit.app/"><span class=" fa fa-link"> </span>Enlace a la aplicación</a>
+                </div>
+              </div>
+            </div>
+            <!-- 3D printing slide -->
+            <div class="swiper-slide">
+              <div class ="project-card" style="cursor: pointer;" onclick="window.location= 'https://github.com/JorgeFBZ/Terremotos-Isla-de-San-Jorge';">
+                <h2><a href="#">3D printed replacement</a></h2>
+                <div class= "card-content">
+                    <img src="./img/3D_replacement.jpg" alt="Recambios en impresora 3D">
+                  <p>3D printed replacement storage case for M3 earplugs.</p>
+                  <a href="https://www.linkedin.com/feed/update/urn:li:activity:7288846820422672386/"><span class=" fa fa-link"> </span>Enlace a la publicación</a>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-     
 
-        <div class ="project-card" style="cursor: pointer;" onclick="window.location= 'https://github.com/JorgeFBZ/Terremotos-Isla-de-San-Jorge';">
-          <h2><a href="#">Azores earthquake app</a></h2>
-          <div class= "card-content">
-              <img src="./img/streamlit.png" alt="Streamlit app">
-            <p>Web application developed in Streamlit to visualize earthquakes recorded on São Jorge Island (Azores).</p>
-            <a href="https://jorgefbz-terremotos-isla-de-san-jorge-terremotos-azores-zwf6rj.streamlit.app/"><span class=" fa fa-link"> </span>Link to the application</a>
-          </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
       </div>
     </div>
@@ -390,6 +420,28 @@
     </footer>
 
     <!-- Javascript -->
+     <!-- Slides script -->
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+     <script>
+      const swiper = new Swiper('.swiper', {
+      slidesPerView: 1, // Show one slide at a time
+      spaceBetween: 20, // Add space between slides
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      autoplay: {
+      delay: 3000, 
+      disableOnInteraction: false,
+      },
+      loop: true, 
+      });
+     </script>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/typed.min.js"></script>
     <script src="js/kube.min.js"></script>
@@ -398,7 +450,7 @@
       function newTyped(){}$(function(){$("#typed").typed({
       // Change to edit type effect
       // strings: ["far northern sky", "your galaxy", "everywhere"],
-      strings: ["Python", "Deswik","Geological mapping", "Data Science","Machine Learning", "Computer Vision", "3D printing"],
+      strings: ["Python", "Deswik","Cartografía geológica", "Data Science","Machine Learning", "Computer Vision", "3D printing"],
 
       typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
     </script>
